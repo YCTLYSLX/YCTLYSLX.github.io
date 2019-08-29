@@ -27,7 +27,7 @@
     <link rel="alternative" href="/atom.xml" title="Mason的博客" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/favicon.ico">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
   <style type="text/css">
@@ -51,7 +51,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="/upload/blogphoto.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Mason</a></h1>
@@ -65,7 +65,9 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/随笔/">随笔</a></li>
+				<li><a href="/tags/随笔/">分类</a></li>
+	        
+				<li><a href="/archives/index.html">归档</a></li>
 	        
 			</ul>
 		</nav>
@@ -111,7 +113,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="/upload/blogphoto.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Mason</h1>
@@ -120,6 +122,8 @@
 			<p class="header-subtitle"><i class="icon icon-quo-left"></i>Every day to be a little better!<i class="icon icon-quo-right"></i></p>
 			
 			
+			
+				
 			
 				
 			
@@ -142,12 +146,14 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags/随笔/">分类</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/archives/index.html">归档</a></li>
 		        
 				</ul>
 			</nav>
@@ -451,6 +457,19 @@
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Centos7更换阿里源"><span class="toc-number">1.</span> <span class="toc-text">Centos7更换阿里源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker安装"><span class="toc-number">2.</span> <span class="toc-text">Docker安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Uninstall-old-versions"><span class="toc-number">2.1.</span> <span class="toc-text">Uninstall old versions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#yum安装gcc相关"><span class="toc-number">2.2.</span> <span class="toc-text">yum安装gcc相关</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#设置stable镜像仓库"><span class="toc-number">2.3.</span> <span class="toc-text">设置stable镜像仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#更新数据索引"><span class="toc-number">2.4.</span> <span class="toc-text">更新数据索引</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装docker"><span class="toc-number">2.5.</span> <span class="toc-text">安装docker</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#启动docker"><span class="toc-number">2.6.</span> <span class="toc-text">启动docker</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置镜像加速器"><span class="toc-number">2.7.</span> <span class="toc-text">配置镜像加速器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker常用命令"><span class="toc-number">3.</span> <span class="toc-text">Docker常用命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#镜像命令"><span class="toc-number">4.</span> <span class="toc-text">镜像命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#容器命令"><span class="toc-number">5.</span> <span class="toc-text">容器命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#容器启动（run）"><span class="toc-number">5.1.</span> <span class="toc-text">容器启动（run）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#容器其他操作"><span class="toc-number">5.2.</span> <span class="toc-text">容器其他操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#重要的一些操作"><span class="toc-number">5.3.</span> <span class="toc-text">重要的一些操作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#容器数据卷"><span class="toc-number">6.</span> <span class="toc-text">容器数据卷</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、直接命令添加"><span class="toc-number">6.1.</span> <span class="toc-text">1、直接命令添加</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、DockerFile添加"><span class="toc-number">6.2.</span> <span class="toc-text">2、DockerFile添加</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据卷容器"><span class="toc-number">7.</span> <span class="toc-text">数据卷容器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DockerFile解析"><span class="toc-number">8.</span> <span class="toc-text">DockerFile解析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#构建三步骤"><span class="toc-number">8.1.</span> <span class="toc-text">构建三步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#保留字指令"><span class="toc-number">8.2.</span> <span class="toc-text">保留字指令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#案例"><span class="toc-number">8.3.</span> <span class="toc-text">案例</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1、Base镜像（scratch）"><span class="toc-number">8.3.1.</span> <span class="toc-text">1、Base镜像（scratch）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2、自定义mycentos"><span class="toc-number">8.3.2.</span> <span class="toc-text">2、自定义mycentos</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3、自定义镜像tomcat9"><span class="toc-number">8.3.3.</span> <span class="toc-text">3、自定义镜像tomcat9</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#小总结"><span class="toc-number">8.4.</span> <span class="toc-text">小总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker常用安装"><span class="toc-number">9.</span> <span class="toc-text">Docker常用安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装Tomcat"><span class="toc-number">9.1.</span> <span class="toc-text">安装Tomcat</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装mysql"><span class="toc-number">9.2.</span> <span class="toc-text">安装mysql</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装Redis"><span class="toc-number">9.3.</span> <span class="toc-text">安装Redis</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
