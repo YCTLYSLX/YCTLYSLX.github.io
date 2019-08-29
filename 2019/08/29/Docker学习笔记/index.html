@@ -16,13 +16,13 @@
 <meta property="og:site_name" content="Mason的博客">
 <meta property="og:description" content="本文主要为Docker的基础知识">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="/29/Docker学习笔记/1564060876676.png">
-<meta property="og:image" content="/29/Docker学习笔记/1564108813550.png">
+<meta property="og:image" content="/2019/08/29/Docker学习笔记/1564060876676.png">
+<meta property="og:image" content="/2019/08/29/Docker学习笔记/1564108813550.png">
 <meta property="og:updated_time" content="2019-08-29T09:38:46.258Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Docker学习笔记">
 <meta name="twitter:description" content="本文主要为Docker的基础知识">
-<meta name="twitter:image" content="/29/Docker学习笔记/1564060876676.png">
+<meta name="twitter:image" content="/2019/08/29/Docker学习笔记/1564060876676.png">
   
     <link rel="alternative" href="/atom.xml" title="Mason的博客" type="application/atom+xml">
   
@@ -322,8 +322,8 @@
 <li>-t：指定镜像名字及标签</li>
 <li>注意“.”不能忘</li>
 </ul>
-<h4 id="3、自定义镜像tomcat9"><a href="#3、自定义镜像tomcat9" class="headerlink" title="3、自定义镜像tomcat9"></a>3、自定义镜像tomcat9</h4><p><img src="/29/Docker学习笔记/1564060876676.png" alt="1564060876676"></p>
-<h3 id="小总结"><a href="#小总结" class="headerlink" title="小总结"></a>小总结</h3><p><img src="/29/Docker学习笔记/1564108813550.png" alt="1564108813550"></p>
+<h4 id="3、自定义镜像tomcat9"><a href="#3、自定义镜像tomcat9" class="headerlink" title="3、自定义镜像tomcat9"></a>3、自定义镜像tomcat9</h4><p><img src="/2019/08/29/Docker学习笔记/1564060876676.png" alt="1564060876676"></p>
+<h3 id="小总结"><a href="#小总结" class="headerlink" title="小总结"></a>小总结</h3><p><img src="/2019/08/29/Docker学习笔记/1564108813550.png" alt="1564108813550"></p>
 <h2 id="Docker常用安装"><a href="#Docker常用安装" class="headerlink" title="Docker常用安装"></a>Docker常用安装</h2><h3 id="安装Tomcat"><a href="#安装Tomcat" class="headerlink" title="安装Tomcat"></a>安装Tomcat</h3><h3 id="安装mysql"><a href="#安装mysql" class="headerlink" title="安装mysql"></a>安装mysql</h3><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="keyword">run</span> -p 3306:3306 --name mysql -v /msuse/mysql/conf:/etc/mysql/conf.d -v /msuse/mysql/logs:/logs -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.6</span><br></pre></td></tr></table></figure>
 
 <h3 id="安装Redis"><a href="#安装Redis" class="headerlink" title="安装Redis"></a>安装Redis</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -p 6379:6379 -v /msuse/myredis/data:/data -v /msuse/myredis/conf/redis.conf:/usr/local/etc/redis/redis.conf -d redis:3.2 redis-server /usr/local/etc/redis/redis.conf --appendonly yes</span><br></pre></td></tr></table></figure>
