@@ -35,7 +35,7 @@
 <meta property="og:image" content="/2019/08/29/spring注解驱动开发/1556620881380.png">
 <meta property="og:image" content="/2019/08/29/spring注解驱动开发/1557146269494.png">
 <meta property="og:image" content="/2019/08/29/spring注解驱动开发/1557200939679.png">
-<meta property="og:updated_time" content="2019-08-29T11:50:10.890Z">
+<meta property="og:updated_time" content="2019-08-29T12:40:24.726Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="spring注解驱动开发">
 <meta name="twitter:description" content="一、组件注册1.@Configuration、@Bean注册组件">
@@ -108,7 +108,7 @@
 				
 					<a class="github" target="_blank" href="https://github.com/YCTLYSLX" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="mail" target="_blank" href="/1280781894@qq.com" title="mail"><i class="icon-mail"></i></a>
+					<a class="mail" target="_blank" href="mailto:1280781894@qq.com" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
 		</nav>
@@ -149,7 +149,7 @@
 					
 						<a class="github" target="_blank" href="https://github.com/YCTLYSLX" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="mail" target="_blank" href="/1280781894@qq.com" title="mail"><i class="icon-mail"></i></a>
+						<a class="mail" target="_blank" href="mailto:1280781894@qq.com" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
 			</nav>
@@ -484,7 +484,7 @@
 <h2 id="4-5-Profile根据环境注册bean"><a href="#4-5-Profile根据环境注册bean" class="headerlink" title="4.5@Profile根据环境注册bean"></a>4.5@Profile根据环境注册bean</h2><ul>
 <li>引入依赖</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;c3p0&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;c3p0&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;0.9.1.2&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;5.1.47&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>c3p0<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>c3p0<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>0.9.1.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>mysql<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mysql-connector-java<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.1.47<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>配置类（==注意看赋值的三种方式==）</li>
