@@ -75,7 +75,7 @@
 	        
 				<li><a href="/archives">归档</a></li>
 	        
-				<li><a href="/tags/随笔">随笔</a></li>
+				<li><a href="/categories/随笔">随笔</a></li>
 	        
 				<li><a href="/categories/Spring">Spring</a></li>
 	        
@@ -165,7 +165,7 @@
 		        
 					<li style="width: 16.666666666666668%"><a href="/archives">归档</a></li>
 		        
-					<li style="width: 16.666666666666668%"><a href="/tags/随笔">随笔</a></li>
+					<li style="width: 16.666666666666668%"><a href="/categories/随笔">随笔</a></li>
 		        
 					<li style="width: 16.666666666666668%"><a href="/categories/Spring">Spring</a></li>
 		        
@@ -213,13 +213,13 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>最近用Hexo和yilia搭建一个博客，途中遇到一些坑，在此记录一下。<a id="more"></a></p>
-<h1 id="基本的指令"><a href="#基本的指令" class="headerlink" title="基本的指令"></a>基本的指令</h1><h2 id="init"><a href="#init" class="headerlink" title="init"></a>init</h2><figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init <span class="string">[folder]</span></span><br></pre></td></tr></table></figure>
+<h1 id="基本的指令"><a href="#基本的指令" class="headerlink" title="基本的指令"></a>基本的指令</h1><h2 id="init"><a href="#init" class="headerlink" title="init"></a>init</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo init [folder]</span></span><br></pre></td></tr></table></figure>
 
 <p>新建一个网站。如果没有设置 <code>folder</code> ，Hexo 默认在目前的文件夹建立网站。</p>
 <h2 id="new"><a href="#new" class="headerlink" title="new"></a>new</h2><figure class="highlight gauss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo <span class="keyword">new</span> [layout] &lt;<span class="built_in">title</span>&gt;</span><br></pre></td></tr></table></figure>
 
 <p>新建一篇文章。如果没有设置 <code>layout</code> 的话，默认使用 <a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">_config.yml</a> 中的 <code>default_layout</code> 参数代替。如果标题包含空格的话，请使用引号括起来。</p>
-<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo <span class="keyword">new</span> <span class="string">"post title with whitespace"</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo new <span class="string">"post title with whitespace"</span></span></span><br></pre></td></tr></table></figure>
 
 <table>
 <thead>
@@ -277,9 +277,9 @@
 </tr>
 </tbody></table>
 <p>该命令可以简写为</p>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo g</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo g</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="publish"><a href="#publish" class="headerlink" title="publish"></a>publish</h2><figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo publish <span class="string">[layout]</span> &lt;filename&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="publish"><a href="#publish" class="headerlink" title="publish"></a>publish</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo publish [layout] &lt;filename&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>发表草稿。</p>
 <h2 id="server"><a href="#server" class="headerlink" title="server"></a>server</h2><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo<span class="built_in"> server </span>或者 hexo s</span><br></pre></td></tr></table></figure>
@@ -305,7 +305,7 @@
 <td>启动日记记录，使用覆盖记录格式</td>
 </tr>
 </tbody></table>
-<h2 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h2><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo deploy</span><br></pre></td></tr></table></figure>
+<h2 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo deploy</span></span><br></pre></td></tr></table></figure>
 
 <p>部署网站。</p>
 <table>
@@ -321,7 +321,7 @@
 </tr>
 </tbody></table>
 <p>该命令可以简写为：</p>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo d</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo d</span></span><br></pre></td></tr></table></figure>
 
 <h1 id="一些必要的软件安装"><a href="#一些必要的软件安装" class="headerlink" title="一些必要的软件安装"></a>一些必要的软件安装</h1><h2 id="01-安装-Node-js"><a href="#01-安装-Node-js" class="headerlink" title="01.安装 Node.js"></a>01.安装 Node.js</h2><p>打开<a href="https://nodejs.org" target="_blank" rel="noopener">官方网站</a><br><code>https://nodejs.org</code><br><a href="https://caiyantao.gitee.io/2019/04/13/Hexo-一/267b6d6d335cf62907c70321a1cbd3b.png" target="_blank" rel="noopener"><img src="https://caiyantao.gitee.io/2019/04/13/Hexo-%E4%B8%80/267b6d6d335cf62907c70321a1cbd3b.png" alt="267b6d6d335cf62907c70321a1cbd3b"></a><br>    安装步骤非常简单，一直next，下一步就可以了，默认安装就行。</p>
 <h2 id="02-安装-Git"><a href="#02-安装-Git" class="headerlink" title="02.安装 Git"></a>02.安装 Git</h2><p>打开<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">官方网站</a><br><code>https://git-scm.com/downloads</code><br>然后我们选择windows版本的下载<br><a href="https://caiyantao.gitee.io/2019/04/13/Hexo-一/9bbee71932a2447533abd0a4c72aa9d.png" target="_blank" rel="noopener"><img src="https://caiyantao.gitee.io/2019/04/13/Hexo-%E4%B8%80/9bbee71932a2447533abd0a4c72aa9d.png" alt="9bbee71932a2447533abd0a4c72aa9d"></a><br><a href="https://caiyantao.gitee.io/2019/04/13/Hexo-一/b6b73bbf60b6f803973119b88274ef6.png" target="_blank" rel="noopener"><img src="https://caiyantao.gitee.io/2019/04/13/Hexo-%E4%B8%80/b6b73bbf60b6f803973119b88274ef6.png" alt="b6b73bbf60b6f803973119b88274ef6"></a><br>安装也是一直点下一步，安装官方默认的来就行，</p>
@@ -345,7 +345,7 @@
 <figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>. 注册的邮箱一定要验证，否则不会成功；</span><br><span class="line"><span class="number">2</span>. 仓库名字必须是：`username.github.io`，其中`username`是你的用户名；</span><br></pre></td></tr></table></figure>
 
 <h2 id="02-配置ssh密钥"><a href="#02-配置ssh密钥" class="headerlink" title="02.配置ssh密钥"></a>02.配置ssh密钥</h2><p>为什么要配置这个呢？因为你提交代码肯定要拥有你的github权限才可以，但是直接使用用户名和密码太不安全了，所以我们使用ssh key来解决本地和服务器的连接问题。</p>
-<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">cd</span> ~<span class="string">/.</span> ssh <span class="comment">#检查本机已存在的ssh密钥</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> ~/. ssh <span class="comment">#检查本机已存在的ssh密钥</span></span></span><br></pre></td></tr></table></figure>
 
 <p>如果提示：No such file or directory 说明你是第一次使用git。</p>
 <figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -<span class="built_in">t</span> rsa -C <span class="string">"邮件地址"</span></span><br></pre></td></tr></table></figure>
@@ -705,15 +705,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">docker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">github</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">docker</a>
               </li>
              
               <li class="article-tag-list-item">
